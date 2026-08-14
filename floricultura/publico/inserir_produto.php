@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $produto = new Produto($nome, $categoria, $descricao, $preco, $qtd, $codBarras);
 
-    if ($cliente->inserir()) {
+    if ($produto->inserir()) {
         echo "Produto cadastrado com sucesso!";
     } else {
         echo "Erro ao cadastrar produto.";
