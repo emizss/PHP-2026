@@ -1,5 +1,5 @@
 <?php
-require_once "../conexaoBD.PHP";
+require_once "../conexaoDB.php";
 
 //Classe produto
 class Produto{
@@ -12,14 +12,14 @@ class Produto{
   private $codBarras;
 
   //Construtor
-  public function __construct($nome, $categoria, $descricao, $preco, $qtd, $codBarras){
-    $this->nome = $nome;
-    $this->categoria = $categoria;
-    $this->descricao = $descricao;
-    $this->preco = $preco;
-    $this->qtd = $qtd;
-    $this->codBarras = $codBarras;
-  }
+  // public function __construct($nome, $categoria, $descricao, $preco, $qtd, $codBarras){
+  //   $this->nome = $nome;
+  //   $this->categoria = $categoria;
+  //   $this->descricao = $descricao;
+  //   $this->preco = $preco;
+  //   $this->qtd = $qtd;
+  //   $this->codBarras = $codBarras;
+  // }
 
   //getters e setters
   public function getId(){return $this->id;}
@@ -35,7 +35,9 @@ class Produto{
   public function setCategoria($categoria){$this->categoria = $categoria;}
   public function setDescricao($descricao){$this->descricao = $descricao;}
   public function setPreco($preco){$this->preco = $preco;}
-  public function setQtd($qtd){$this->qtd = $qtd;}
+  public function setQtd($qtd){
+    $this->qtd = $qtd;
+  }
   public function setCodBarras($codBarras){$this->codBarras = $codBarras;}
 
   // Método CREATE

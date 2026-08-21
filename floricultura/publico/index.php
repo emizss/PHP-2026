@@ -20,6 +20,9 @@
     <li>
       <a href="venda.html"> Inserir Venda</a>
     </li>
+        <li>
+      <a href="../testes/teste_produto.php"> PRODUTO</a>
+    </li>
   </ul>
 </body>
 </html>
