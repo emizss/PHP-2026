@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Funcionario</title>
+  </head>
+  <body>
+    <h1>Cadastrar Funcionário</h1>
+
+    <form action="inserir_funcionario.php" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required /><br /><br />
+
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required /><br /><br />
+
+      <label for="celular">Celular:</label>
+      <input type="text" id="celular" name="celular" required /><br /><br />
+
+      <label for="dataNasc">Data de Nascimento:</label>
+      <input type="date" id="dataNasc" name="dataNasc" required /><br /><br />
+
+      <label for="curriculo">Currículo:</label>
+      <input type="text" id="curriculo" name="curriculo" required /><br /><br />
+
+      <button type="submit">Cadastrar</button>
+    </form>
+    <a href="index.php">MENU PRINCIPAL</a>
+  </body>
+</html>
