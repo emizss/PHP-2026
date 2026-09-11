@@ -1,9 +1,9 @@
 <?php
 
-// function getConexao(){
-// $dsn = "pgsql:host=localhost;port=5432;dbname=floricultura;";
-// $usuario = "postgres"; 
-// $senha = "123";
+
+$dsn = "pgsql:host=localhost;port=5432;dbname=floricultura;";
+$usuario = "postgres"; 
+$senha = "123";
 
 
 

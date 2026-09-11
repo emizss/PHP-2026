@@ -10,7 +10,7 @@
   <a href="index.php?modulo=produto&acao=criar">Novo produto</a>
 
   <ul>
-    <?php foreach ($produto as $p): ?>
+    <?php foreach ($produtos as $p): ?>
       <li>
         <?= htmlspecialchars($p['nome']) ?> -
         R$ <?= number_format($p['preco'], 2, ',', '.') ?>
