@@ -15,4 +15,3 @@ function carregar($classe) {
 spl_autoload_register('carregar');
 
 
-  
