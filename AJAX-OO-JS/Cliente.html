@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function CLiente(id, nome, dataNasc, senha) {
+        this.nome = nome;
+
+        //private
+        let senha = senha;
+        let dataNasc = dataNasc;
+
+        this.getSenha = function () {
+          return senha;
+        };
+        function contemMaiusculaEMinuscula(str) {
+          return /[A-Z]/.test(str) && /[a-z]/.test(str);
+        }
+        this.setSenha = function (senha) {
+          if (contemMaiusculaEMinuscula() == true) {
+            return /[A-Z]/.test(senha) && /[a-z]/.test(teste);
+            this.senha = senha;
+          }
+        };
+        this.getdataNasc = function () {
+          return dataNasc;
+        };
+      }
+    </script>
+  </body>
+</html>
