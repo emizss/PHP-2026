@@ -17,8 +17,7 @@
         this.getSenha = function () {
           return senha;
         };
-        contemMaiusculaEMinuscula(senha);
-        {
+        function contemMaiusculaEMinuscula(senha) {
           const temMaiuscula = /[A-Z]/.test(senha);
           const temMinuscula = /[a-z]/.test(senha);
           return temMaiuscula && temMinuscula;
