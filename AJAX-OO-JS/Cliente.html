@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      function Cliente(id, nome, d, s) {
+      function Cliente(id, nome, s, d) {
         this.nome = nome;
         this.id = id;
 
@@ -43,7 +43,7 @@
         };
 
         this.calculaIdade = function () {
-          return calculaIdade(this.dataNasc);
+          return calculaIdade(dataNasc);
         };
       }
       function calculaTempoCadastro(agora) {
