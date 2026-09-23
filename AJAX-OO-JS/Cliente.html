@@ -33,7 +33,7 @@
         function calculaIdade(dataNasc) {
           const partes = dataNasc.split("/");
           const ultimo = partes.at(-1);
-          const ano = data.getFullYear();
+          const ano = new Date().getFullYear();
           const idade = ano - ultimo;
           return idade;
         }
