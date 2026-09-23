@@ -10,6 +10,9 @@
       function Cliente(id, nome, d, s) {
         this.nome = nome;
         this.id = id;
+        this.agora = agora;
+        const agora = new Date(Date.now());
+
         //private
         let senha = s;
         let dataNasc = d;
@@ -36,6 +39,12 @@
             this.dataNasc = dataNasc;
           }
         };
+        calculaTempoCadastro(agora);
+      }
+      function calculaTempoCadastro(agora) {
+        const tempoAtual = new Date(Date.now());
+        const tempoCadastro = tempoAtual - agora;
+        return tempoCadastro;
       }
       function calculaIdade(dataNasc) {
         const partes = dataNasc.split("/");
