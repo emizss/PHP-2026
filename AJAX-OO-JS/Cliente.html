@@ -11,8 +11,6 @@
         this.nome = nome;
         this.id = id;
 
-        const agora = new Date(Date.now());
-
         //private
         let senha = s;
         let dataNasc = d;
@@ -39,6 +37,7 @@
             this.dataNasc = dataNasc;
           }
         };
+        const agora = new Date(Date.now());
         calculaTempoCadastro(agora);
       }
       function calculaTempoCadastro(agora) {
