@@ -30,6 +30,18 @@
         this.getdataNasc = function () {
           return dataNasc;
         };
+        function caculaIdade(dataNasc) {
+          const partes = dataNasc.split("/");
+          const ultimo = partes.at(-1);
+          const ano = data.getFullYear();
+          const idade = ultimo - ano;
+          return idade;
+        }
+        this.setdataNasc = function (dataNasc) {
+          if (calculadaIdade(dataNasc) >= 0) {
+            this.dataNasc = dataNasc;
+          }
+        };
       }
     </script>
   </body>
