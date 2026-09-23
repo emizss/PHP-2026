@@ -37,8 +37,10 @@
             this.dataNasc = dataNasc;
           }
         };
-        const agora = new Date(Date.now());
-        calculaTempoCadastro(agora);
+        this.getTempoCadastro = function () {
+          const agora = new Date(Date.now());
+          return calculaTempoCadastro(agora);
+        };
       }
       function calculaTempoCadastro(agora) {
         const tempoAtual = new Date(Date.now());
