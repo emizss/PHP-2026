@@ -7,12 +7,12 @@
   </head>
   <body>
     <script>
-      function Cliente(id, nome, dataNasc, senha) {
+      function Cliente(id, nome, d, s) {
         this.nome = nome;
         this.id = id;
         //private
-        let senha = senha;
-        let dataNasc = dataNasc;
+        let senha = s;
+        let dataNasc = d;
 
         this.getSenha = function () {
           return senha;
