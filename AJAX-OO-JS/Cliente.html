@@ -17,12 +17,14 @@
         this.getSenha = function () {
           return senha;
         };
-        function contemMaiusculaEMinuscula(str) {
-          return /[A-Z]/.test(str) && /[a-z]/.test(str);
+        contemMaiusculaEMinuscula(senha);
+        {
+          const temMaiuscula = /[A-Z]/.test(senha);
+          const temMinuscula = /[a-z]/.test(senha);
+          return temMaiuscula && temMinuscula;
         }
         this.setSenha = function (senha) {
           if (contemMaiusculaEMinuscula() == true) {
-            return /[A-Z]/.test(senha) && /[a-z]/.test(teste);
             this.senha = senha;
           }
         };
